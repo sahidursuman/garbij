@@ -11,8 +11,9 @@ class SpacesController < ApplicationController
   def create
     @space = Space.new(space_params)
     @space.user_id = params[:user_id]
+    @user = User.find(params[:user_id])
     if @space.save
-      redirect_to root_path #need to go to the last space
+      redirect_to user_space_path(@user, @space) #need to go to the last space
     else
       render :new
     end
