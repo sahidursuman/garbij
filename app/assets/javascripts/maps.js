@@ -29,12 +29,16 @@ window.initMap = function(){
   //         ['<%= @spaces[3].title %>', '<%= @spaces[3].latitude %>','<%= @spaces[3].longitude %>'],
   //         ['<%= @spaces[4].title %>', '<%= @spaces[4].latitude %>','<%= @spaces[4].longitude %>']
   //       ]});
-
-
-  var marker = new google.maps.Marker({
-    position: latLong,
-    map: map,
-    title: Xname
-  });
+    var marker = new google.maps.Marker({
+      position: latLong,
+      map: map,
+      title: Xname
+    });
+// //////this is what it looked like befor
+//   var marker = new google.maps.Marker({
+//     position: latLong,
+//     map: map,
+//     title: Xname
+//   });
 
 };
