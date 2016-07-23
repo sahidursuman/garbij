@@ -73,16 +73,6 @@ $(function(){
   //   console.log("not working")
   // }
 
-  $('.buy-spot').on('click', function(e){
-    console.log('clicked buy button');
-    console.log(e);
-    //going to need ajax request to execute business logic
-    //need to POST some data set to a form that executes the transaction
-    //1. get the user from the spaces that we clicked after we GET with /spaces AJAX
-    //2. Now we have user 1 (who made buy request) and user 2(who has a space).
-    //3. get user 2's space from the clicked space object $(this)
-    //4. Subract the user 1 quantity from user 2 capacity
-     
-  });
+  
 
 });
