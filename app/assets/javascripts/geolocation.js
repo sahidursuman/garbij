@@ -73,8 +73,10 @@ $(function(){
   //   console.log("not working")
   // }
 
-  $('.buy-spot').on('click', function(){
-    console.log('clicked');
+  $('.buy-spot').on('click', function(e){
+    console.log('clicked buy button');
+    console.log(e);
+    //going to need ajax request to execute business logic
   });
-  
+
 });
