@@ -72,4 +72,9 @@ $(function(){
   // function itFailed(error){
   //   console.log("not working")
   // }
+
+  $('.buy-spot').on('click', function(){
+    console.log('clicked');
+  });
+  
 });

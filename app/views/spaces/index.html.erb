@@ -1,13 +1,15 @@
 
-
-<% @spaces.each do |x| %>
-  Address: <%= x.address %> -
-  Capacity: <%= x.capacity %> <br />
-<% end %>
+<div id="spaces-list">
+  <% @spaces.each do |x| %>
+    <div class="space-item">
+      Address: <%= x.address %> -
+      Capacity: <%= x.capacity %> <br />
+    </div>
+  <% end %>
+</div>
 
 <!-- create a for loop to define i for map markers -->
 <%= javascript_tag do %>
   window.spaces = <%=raw @spaces.to_json %>;
 <% end %>
 <!-- map injected here -->
-  
