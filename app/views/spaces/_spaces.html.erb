@@ -5,15 +5,16 @@
   <div id="spaces-list">
     <ul class = "all-list">
       <div class="space-item">
+        
         <form action='/spaces' id="button-form" method="POST">
 
           <li><p>Address: <%= x.address %></p></li>
           <li><p>Capacity: <%= x.capacity %></p></li>
           <li><p>Garbage Day: <%= x.garbaje_day %></p></li>
+          <button type="submit" class="buy-spot" form="button-form" value="submit">Buy the spot</button>
 
         </form>
 
-        <button type="submit" class="buy-spot" form="button-form" value="submit">Buy the spot</button>
       </div>
     </ul>
   </div>
