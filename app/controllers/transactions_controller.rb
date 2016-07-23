@@ -26,11 +26,12 @@ class TransactionsController < ApplicationController
 
   def new
     @transaction = Transaction.new
-    
+
     # @user = User.find_by id: '1'
     # @space = @user.spaces[0]
     # @space = @user.spaces.first
-    #@space = current_user.spaces
+    @spaces = User.find(params[:user_id])
+
   end
 
   def create

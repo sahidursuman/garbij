@@ -14,6 +14,7 @@ class SpacesController < ApplicationController
   def new
     @user = current_user
     @space = Space.new
+
   end
 
   def create

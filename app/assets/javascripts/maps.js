@@ -1,6 +1,6 @@
 
 // var map;
-function initMap(){
+window.initMap = function(){
 
   var mapPlaceHolder = $('#map');
 
@@ -13,10 +13,10 @@ function initMap(){
     // var arrayLat =
     var markers = [];
     var infoWindowContent = [];
-    $.each(spaces, function(index)){
-      markers.push([spaces[index]['address'], spaces[index]['latitude'], spaces[index]['longitude']]);
+  //  $.each(spaces, function(index){(
+  //    markers.push([spaces[index]['address'], spaces[index]['latitude'], spaces[index]['longitude']])
       // infoWindowContent.push([])
-    }
+  //  )});
 
   var Xname = mapPlaceHolder.data('name')
 
