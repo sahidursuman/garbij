@@ -31,7 +31,17 @@ $(function(){
       $('.geolocation-list').html(responseData);
     })//end of AJAX
 
-
+    $.ajax({
+      url: '/mapPlace',
+      method: 'get',
+      data: { },
+      dataType: 'html'
+    }).done(function(responseData){
+      console.log(responseData)
+      $('#map-drop').html(responseData);
+    }).fail(function(){
+      console.log("something happened when dropping the map in")
+    });
 
     // if("geolocation" in navigator){
     //   navigator.geolocation.getCurrentPosition(itWorked, itFailed);

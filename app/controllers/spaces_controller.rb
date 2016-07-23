@@ -1,6 +1,7 @@
 class SpacesController < ApplicationController
   def index
     @spaces = Space.all
+    @spaces.near([params[:latitude], params[:logitude]])
     @user = current_user
     if request.xhr?
       @spaces.near([params[:latitude], params[:logitude]])
@@ -55,6 +56,11 @@ class SpacesController < ApplicationController
       format.html { redirect_to user_path(current_user) }
       format.xml  { head :ok }
     end
+  end
+
+  def mapPlace
+    @spaces = Space.all
+    @spaces.near([params[:latitude], params[:logitude]])
   end
 
   private
