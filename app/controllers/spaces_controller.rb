@@ -56,6 +56,11 @@ class SpacesController < ApplicationController
     end
   end
 
+  def mapPlace
+    @spaces = Space.all
+    @spaces.near([params[:latitude], params[:logitude]])
+  end 
+
   private
   def space_params
     params.require(:space).permit(:capacity, :address, :garbaje_day, :user_id)
