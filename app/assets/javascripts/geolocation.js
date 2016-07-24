@@ -39,7 +39,7 @@ $(function(){
           dataType: 'html'
         }).done(function(responseData){
           console.log(responseData)
-          $('#map-drop').html(responseData);
+          $('.map-drop').html(responseData);
         }).fail(function(){
           console.log("something happened when dropping the map in")
         });
