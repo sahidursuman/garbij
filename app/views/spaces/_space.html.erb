@@ -12,7 +12,9 @@
                   </div>
 
                   <div class="panel-body"><!-- Panel Body -->
-
+                    <!-- Link to set bootstrap properly working with the show space page (user profile) -->
+                    <%= link_to "Sell Space(s)", user_space_path(@user, space), class: 'sellspacebutton' %> |
+                    <%= link_to "Buy Space(s)", transactions_path %><br>
                     <div class="btn-group" role="group" aria-label="...">
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myupdatepost_<%= space.id %>">
                           Edit

@@ -28,8 +28,7 @@
     <div class="row" id="container_posts">
       <!-- <h3>Your Existing Garbage Bins</h3> -->
       <% @user.spaces.each do |space| %>
-        <%= link_to "Sell Space(s)", user_space_path(@user, space), class: 'sellspacebutton' %> |
-        <%= link_to "Buy Space(s)", transactions_path %><br>
+      
         <%= render space %>
       <% end %>
     </div>
@@ -86,4 +85,3 @@
     <%#= space.buy_transactions.each do |buy_transactions| %>
       <li>Address: <%#=buy_transaction.quantity %></li>
 </ul> -->
->>>>>>> master
