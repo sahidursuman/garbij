@@ -1,28 +1,13 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  CONCEPT: 
+  
+  Garbij is the worlds first shared economy platform for residential trash. In municipalities accross Ontario, residences are limited in the amount of garbage they can dispose of. Each additional bag costs upwards of $5 and a sticker must be purchased for that bag. With Garbij, simply log on, and "buy" your neighbours excess garbage space at a fraction of the cost and with a fraction of the hassle. Additionally, if you have not hit your garbage quota, you can "sell" your space to a neighbour, and be paid by them to take their excess trash. This application was developed with Rail. It uses the Google Maps API, and the following gems: Geocoder, ActiveMerchant, and Stripe.
+  
+  HOW TO USE:
+  
+    1. Ensure you have Rails 4 installed
+    2. Clone Repo and use bundler to install dependencies via "bundle install" 
+    3. On terminal, run "rails s" to launch server
+    4. Visit https://localhost:3000
+    
+  VISIT LAUNCHED VERSION ON HEROKUAPP 
